@@ -1,0 +1,44 @@
+Task 1:
+[CORE]
+1) float *fp;
+
+2) long int *func1(int a, int b);
+
+3) int *i[20];
+
+4) char *arr[] = {"cyan", "magenta", "yellow"};
+
+5) struct rect { float width; float height; };
+
+6) typedef struct rect rect_t;
+   
+7) rect_t *point;
+   point = (rect_t*) calloc(10, sizeof(rect_t));
+
+8) rect_t *create_rect(float w, float l)
+{
+	rect_t *ptr; 
+	ptr = (rect_t*) malloc(sizeof(rect_t));
+	if (ptr == NULL)
+	{
+	    return NULL;
+	}
+	ptr->width = w;
+	ptr->length = l;
+	return ptr;
+}
+
+Task 2:
+[COMPLETION]
+1) &u's numerical value 1100.
+2) &v's numerical value 1101.
+3) *pv's numerical value (JUST after line 4) is 66. (ASCII VALUE OF 'A'+1)
+4) *pu's numerical value (after line 6) is 1103.
+
+Task 3:
+[CHALLENGE]
+1) a[0] returns the value of its address at "1".
+2) &a[0] returns its address at "1102".
+3) a returns its address at "1102".
+4) ppa returns its address at "1118".
+5) *ppa + 2 returns the value of its address + 2; an address at "1116"
